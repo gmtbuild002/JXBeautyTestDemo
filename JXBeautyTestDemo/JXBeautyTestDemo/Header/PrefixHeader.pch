@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  JXBeautyTestDemo
+//
+//  Created by 张亚超 on 2019/12/17.
+//  Copyright © 2019 KUWO. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+Sizes.h"
+
+#define JXScreenWidth     MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
+#define JXScreenHeight    MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
+
+//比例系数 按照屏幕iPhone6适配
+#define DeviceScale6     (JXScreenWidth / 375.f)
+
+
+#define WEAK_SELF __weak typeof(self)weakSelf = self
+
+#endif /* PrefixHeader_pch */

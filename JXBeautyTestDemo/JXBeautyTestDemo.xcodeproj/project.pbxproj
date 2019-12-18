@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0023532323A8B3910066017E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023532223A8B3910066017E /* AppDelegate.m */; };
+		0023532923A8B3910066017E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023532823A8B3910066017E /* ViewController.m */; };
+		0023532E23A8B3920066017E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0023532D23A8B3920066017E /* Assets.xcassets */; };
+		0023533123A8B3920066017E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023532F23A8B3920066017E /* LaunchScreen.storyboard */; };
+		0023533423A8B3920066017E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023533323A8B3920066017E /* main.m */; };
+		0023554423A8B5170066017E /* JXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023554323A8B5170066017E /* JXHomeViewController.m */; };
+		0023554823A8B8780066017E /* QTMobileLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023554623A8B8780066017E /* QTMobileLiveManager.m */; };
+		0023555923A8B8F90066017E /* JXStickerManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023554A23A8B8F90066017E /* JXStickerManage.m */; };
+		0023555A23A8B8F90066017E /* STStickerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023554C23A8B8F90066017E /* STStickerLoader.m */; };
+		0023555B23A8B8F90066017E /* dataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0023554D23A8B8F90066017E /* dataSource.plist */; };
+		0023555C23A8B8F90066017E /* FUMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023554F23A8B8F90066017E /* FUMusicPlayer.m */; };
+		0023555D23A8B8F90066017E /* FUImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023555023A8B8F90066017E /* FUImageHelper.m */; };
+		0023555E23A8B8F90066017E /* FULiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023555123A8B8F90066017E /* FULiveModel.m */; };
+		0023555F23A8B8F90066017E /* FUManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023555523A8B8F90066017E /* FUManager.m */; };
+		0023556223A8B9270066017E /* QTBeautySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023556023A8B9270066017E /* QTBeautySettingViewController.m */; };
+		0023556523A8B94E0066017E /* QTDevicePermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023556323A8B94E0066017E /* QTDevicePermissionManager.m */; };
+		0023557223A8BA100066017E /* QTMobileAnchorLiveFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023556D23A8BA100066017E /* QTMobileAnchorLiveFilterView.m */; };
+		0023557323A8BA100066017E /* QTMobileAnchorLiveBeautyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023556E23A8BA100066017E /* QTMobileAnchorLiveBeautyView.m */; };
+		0023557423A8BA110066017E /* QTMobileAnchorLiveEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023556F23A8BA100066017E /* QTMobileAnchorLiveEffectView.m */; };
+		0023557523A8BA110066017E /* QTMobileAnchorLiveFilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023557023A8BA100066017E /* QTMobileAnchorLiveFilterCollectionViewCell.m */; };
+		0023557923A8BA810066017E /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023557723A8BA810066017E /* UIView+Sizes.m */; };
+		0023558923A8BE140066017E /* dataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0023557B23A8BE130066017E /* dataSource.plist */; };
+		0023558A23A8BE140066017E /* release_note.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0023557D23A8BE130066017E /* release_note.txt */; };
+		0023558B23A8BE140066017E /* libnama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0023557E23A8BE130066017E /* libnama.a */; };
+		0023558C23A8BE140066017E /* v3.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0023558023A8BE130066017E /* v3.bundle */; };
+		0023558D23A8BE140066017E /* ardata_ex.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0023558123A8BE130066017E /* ardata_ex.bundle */; };
+		0023558E23A8BE140066017E /* fxaa.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0023558223A8BE130066017E /* fxaa.bundle */; };
+		0023558F23A8BE140066017E /* anim_model.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0023558323A8BE140066017E /* anim_model.bundle */; };
+		0023559023A8BE140066017E /* face_beautification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0023558423A8BE140066017E /* face_beautification.bundle */; };
+		0023559323A8C3B10066017E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0023559223A8C3B00066017E /* OpenGLES.framework */; };
+		0023559523A8C3B90066017E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0023559423A8C3B90066017E /* Accelerate.framework */; };
+		0023559723A8C3BE0066017E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0023559623A8C3BE0066017E /* CoreMedia.framework */; };
+		0023559923A8C3C40066017E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0023559823A8C3C40066017E /* AVFoundation.framework */; };
+		0023559B23A8C5F40066017E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0023559A23A8C5F40066017E /* libc++.tbd */; };
+		0023559F23A8C7C60066017E /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0023559E23A8C7C50066017E /* libiconv.2.4.0.tbd */; };
+		002355A123A8C7CF0066017E /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 002355A023A8C7CF0066017E /* libbz2.1.0.tbd */; };
+		002355A323A8CB990066017E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 002355A223A8CB990066017E /* libz.tbd */; };
+		0025216223A9CDEF00232109 /* libJXPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0025216123A9CDEF00232109 /* libJXPlayer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0023531E23A8B3910066017E /* JXBeautyTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXBeautyTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0023532123A8B3910066017E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0023532223A8B3910066017E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0023532723A8B3910066017E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0023532823A8B3910066017E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0023532D23A8B3920066017E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0023533023A8B3920066017E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0023533223A8B3920066017E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0023533323A8B3920066017E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0023554223A8B5170066017E /* JXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXHomeViewController.h; sourceTree = "<group>"; };
+		0023554323A8B5170066017E /* JXHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXHomeViewController.m; sourceTree = "<group>"; };
+		0023554623A8B8780066017E /* QTMobileLiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTMobileLiveManager.m; sourceTree = "<group>"; };
+		0023554723A8B8780066017E /* QTMobileLiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTMobileLiveManager.h; sourceTree = "<group>"; };
+		0023554A23A8B8F90066017E /* JXStickerManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXStickerManage.m; sourceTree = "<group>"; };
+		0023554C23A8B8F90066017E /* STStickerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStickerLoader.m; sourceTree = "<group>"; };
+		0023554D23A8B8F90066017E /* dataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dataSource.plist; sourceTree = "<group>"; };
+		0023554E23A8B8F90066017E /* authpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authpack.h; sourceTree = "<group>"; };
+		0023554F23A8B8F90066017E /* FUMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUMusicPlayer.m; sourceTree = "<group>"; };
+		0023555023A8B8F90066017E /* FUImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUImageHelper.m; sourceTree = "<group>"; };
+		0023555123A8B8F90066017E /* FULiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FULiveModel.m; sourceTree = "<group>"; };
+		0023555223A8B8F90066017E /* FUManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUManager.h; sourceTree = "<group>"; };
+		0023555323A8B8F90066017E /* STStickerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STStickerLoader.h; sourceTree = "<group>"; };
+		0023555423A8B8F90066017E /* FUMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUMusicPlayer.h; sourceTree = "<group>"; };
+		0023555523A8B8F90066017E /* FUManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUManager.m; sourceTree = "<group>"; };
+		0023555623A8B8F90066017E /* FULiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FULiveModel.h; sourceTree = "<group>"; };
+		0023555723A8B8F90066017E /* FUImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUImageHelper.h; sourceTree = "<group>"; };
+		0023555823A8B8F90066017E /* JXStickerManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXStickerManage.h; sourceTree = "<group>"; };
+		0023556023A8B9270066017E /* QTBeautySettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTBeautySettingViewController.m; sourceTree = "<group>"; };
+		0023556123A8B9270066017E /* QTBeautySettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTBeautySettingViewController.h; sourceTree = "<group>"; };
+		0023556323A8B94E0066017E /* QTDevicePermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTDevicePermissionManager.m; sourceTree = "<group>"; };
+		0023556423A8B94E0066017E /* QTDevicePermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTDevicePermissionManager.h; sourceTree = "<group>"; };
+		0023556723A8B9AF0066017E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0023556A23A8BA100066017E /* QTMobileAnchorLiveBeautyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTMobileAnchorLiveBeautyView.h; sourceTree = "<group>"; };
+		0023556B23A8BA100066017E /* QTMobileAnchorLiveEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTMobileAnchorLiveEffectView.h; sourceTree = "<group>"; };
+		0023556C23A8BA100066017E /* QTMobileAnchorLiveFilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTMobileAnchorLiveFilterCollectionViewCell.h; sourceTree = "<group>"; };
+		0023556D23A8BA100066017E /* QTMobileAnchorLiveFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTMobileAnchorLiveFilterView.m; sourceTree = "<group>"; };
+		0023556E23A8BA100066017E /* QTMobileAnchorLiveBeautyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTMobileAnchorLiveBeautyView.m; sourceTree = "<group>"; };
+		0023556F23A8BA100066017E /* QTMobileAnchorLiveEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTMobileAnchorLiveEffectView.m; sourceTree = "<group>"; };
+		0023557023A8BA100066017E /* QTMobileAnchorLiveFilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTMobileAnchorLiveFilterCollectionViewCell.m; sourceTree = "<group>"; };
+		0023557123A8BA100066017E /* QTMobileAnchorLiveFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTMobileAnchorLiveFilterView.h; sourceTree = "<group>"; };
+		0023557723A8BA810066017E /* UIView+Sizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sizes.m"; sourceTree = "<group>"; };
+		0023557823A8BA810066017E /* UIView+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sizes.h"; sourceTree = "<group>"; };
+		0023557B23A8BE130066017E /* dataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dataSource.plist; sourceTree = "<group>"; };
+		0023557D23A8BE130066017E /* release_note.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_note.txt; sourceTree = "<group>"; };
+		0023557E23A8BE130066017E /* libnama.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnama.a; sourceTree = "<group>"; };
+		0023558023A8BE130066017E /* v3.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = v3.bundle; sourceTree = "<group>"; };
+		0023558123A8BE130066017E /* ardata_ex.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = ardata_ex.bundle; sourceTree = "<group>"; };
+		0023558223A8BE130066017E /* fxaa.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = fxaa.bundle; sourceTree = "<group>"; };
+		0023558323A8BE140066017E /* anim_model.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = anim_model.bundle; sourceTree = "<group>"; };
+		0023558423A8BE140066017E /* face_beautification.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = face_beautification.bundle; sourceTree = "<group>"; };
+		0023558623A8BE140066017E /* funama.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = funama.h; sourceTree = "<group>"; };
+		0023558723A8BE140066017E /* FURenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FURenderer.h; sourceTree = "<group>"; };
+		0023558823A8BE140066017E /* authpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authpack.h; sourceTree = "<group>"; };
+		0023559223A8C3B00066017E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0023559423A8C3B90066017E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0023559623A8C3BE0066017E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0023559823A8C3C40066017E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0023559A23A8C5F40066017E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0023559C23A8C6E00066017E /* libJXPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJXPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0023559E23A8C7C50066017E /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		002355A023A8C7CF0066017E /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		002355A223A8CB990066017E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0025215B23A9CDC100232109 /* JXAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXAudioSession.h; sourceTree = "<group>"; };
+		0025215C23A9CDC100232109 /* JXRecoderMainDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXRecoderMainDefine.h; sourceTree = "<group>"; };
+		0025215D23A9CDC100232109 /* JXMediaRecorderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXMediaRecorderController.h; sourceTree = "<group>"; };
+		0025215E23A9CDC100232109 /* JXRecorderEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXRecorderEnum.h; sourceTree = "<group>"; };
+		0025216123A9CDEF00232109 /* libJXPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJXPlayer.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0023531B23A8B3910066017E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002355A323A8CB990066017E /* libz.tbd in Frameworks */,
+				002355A123A8C7CF0066017E /* libbz2.1.0.tbd in Frameworks */,
+				0023559F23A8C7C60066017E /* libiconv.2.4.0.tbd in Frameworks */,
+				0023559B23A8C5F40066017E /* libc++.tbd in Frameworks */,
+				0025216223A9CDEF00232109 /* libJXPlayer.a in Frameworks */,
+				0023559923A8C3C40066017E /* AVFoundation.framework in Frameworks */,
+				0023559723A8C3BE0066017E /* CoreMedia.framework in Frameworks */,
+				0023559523A8C3B90066017E /* Accelerate.framework in Frameworks */,
+				0023559323A8C3B10066017E /* OpenGLES.framework in Frameworks */,
+				0023558B23A8BE140066017E /* libnama.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0023531523A8B3910066017E = {
+			isa = PBXGroup;
+			children = (
+				0023532023A8B3910066017E /* JXBeautyTestDemo */,
+				0023531F23A8B3910066017E /* Products */,
+				0023559123A8C3B00066017E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0023531F23A8B3910066017E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0023531E23A8B3910066017E /* JXBeautyTestDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0023532023A8B3910066017E /* JXBeautyTestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0025215923A9CDA700232109 /* Recorder */,
+				0023557623A8BA710066017E /* Category */,
+				0023556823A8BA050066017E /* Views */,
+				0023556623A8B9780066017E /* Header */,
+				0023554523A8B8780066017E /* Manager */,
+				0023554123A8B4FD0066017E /* ViewControllers */,
+				0023532123A8B3910066017E /* AppDelegate.h */,
+				0023532223A8B3910066017E /* AppDelegate.m */,
+				0023532723A8B3910066017E /* ViewController.h */,
+				0023532823A8B3910066017E /* ViewController.m */,
+				0023532D23A8B3920066017E /* Assets.xcassets */,
+				0023532F23A8B3920066017E /* LaunchScreen.storyboard */,
+				0023533223A8B3920066017E /* Info.plist */,
+				0023533323A8B3920066017E /* main.m */,
+			);
+			path = JXBeautyTestDemo;
+			sourceTree = "<group>";
+		};
+		0023554123A8B4FD0066017E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0023556123A8B9270066017E /* QTBeautySettingViewController.h */,
+				0023556023A8B9270066017E /* QTBeautySettingViewController.m */,
+				0023554223A8B5170066017E /* JXHomeViewController.h */,
+				0023554323A8B5170066017E /* JXHomeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0023554523A8B8780066017E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0023556423A8B94E0066017E /* QTDevicePermissionManager.h */,
+				0023556323A8B94E0066017E /* QTDevicePermissionManager.m */,
+				0023554923A8B8F90066017E /* BeautyFilter */,
+				0023554623A8B8780066017E /* QTMobileLiveManager.m */,
+				0023554723A8B8780066017E /* QTMobileLiveManager.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0023554923A8B8F90066017E /* BeautyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				0023557A23A8BE130066017E /* faceunity */,
+				0023554A23A8B8F90066017E /* JXStickerManage.m */,
+				0023554B23A8B8F90066017E /* Main */,
+				0023555823A8B8F90066017E /* JXStickerManage.h */,
+			);
+			path = BeautyFilter;
+			sourceTree = "<group>";
+		};
+		0023554B23A8B8F90066017E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0023554C23A8B8F90066017E /* STStickerLoader.m */,
+				0023554D23A8B8F90066017E /* dataSource.plist */,
+				0023554E23A8B8F90066017E /* authpack.h */,
+				0023554F23A8B8F90066017E /* FUMusicPlayer.m */,
+				0023555023A8B8F90066017E /* FUImageHelper.m */,
+				0023555123A8B8F90066017E /* FULiveModel.m */,
+				0023555223A8B8F90066017E /* FUManager.h */,
+				0023555323A8B8F90066017E /* STStickerLoader.h */,
+				0023555423A8B8F90066017E /* FUMusicPlayer.h */,
+				0023555523A8B8F90066017E /* FUManager.m */,
+				0023555623A8B8F90066017E /* FULiveModel.h */,
+				0023555723A8B8F90066017E /* FUImageHelper.h */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0023556623A8B9780066017E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				0023556723A8B9AF0066017E /* PrefixHeader.pch */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		0023556823A8BA050066017E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0023556923A8BA100066017E /* QTEffectView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0023556923A8BA100066017E /* QTEffectView */ = {
+			isa = PBXGroup;
+			children = (
+				0023556A23A8BA100066017E /* QTMobileAnchorLiveBeautyView.h */,
+				0023556B23A8BA100066017E /* QTMobileAnchorLiveEffectView.h */,
+				0023556C23A8BA100066017E /* QTMobileAnchorLiveFilterCollectionViewCell.h */,
+				0023556D23A8BA100066017E /* QTMobileAnchorLiveFilterView.m */,
+				0023556E23A8BA100066017E /* QTMobileAnchorLiveBeautyView.m */,
+				0023556F23A8BA100066017E /* QTMobileAnchorLiveEffectView.m */,
+				0023557023A8BA100066017E /* QTMobileAnchorLiveFilterCollectionViewCell.m */,
+				0023557123A8BA100066017E /* QTMobileAnchorLiveFilterView.h */,
+			);
+			path = QTEffectView;
+			sourceTree = "<group>";
+		};
+		0023557623A8BA710066017E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0023557823A8BA810066017E /* UIView+Sizes.h */,
+				0023557723A8BA810066017E /* UIView+Sizes.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0023557A23A8BE130066017E /* faceunity */ = {
+			isa = PBXGroup;
+			children = (
+				0023557B23A8BE130066017E /* dataSource.plist */,
+				0023557C23A8BE130066017E /* FaceUnity-SDK-iOS-lite */,
+				0023558823A8BE140066017E /* authpack.h */,
+			);
+			path = faceunity;
+			sourceTree = "<group>";
+		};
+		0023557C23A8BE130066017E /* FaceUnity-SDK-iOS-lite */ = {
+			isa = PBXGroup;
+			children = (
+				0023557D23A8BE130066017E /* release_note.txt */,
+				0023557E23A8BE130066017E /* libnama.a */,
+				0023557F23A8BE130066017E /* Resources */,
+				0023558523A8BE140066017E /* Headers */,
+			);
+			path = "FaceUnity-SDK-iOS-lite";
+			sourceTree = "<group>";
+		};
+		0023557F23A8BE130066017E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0023558023A8BE130066017E /* v3.bundle */,
+				0023558123A8BE130066017E /* ardata_ex.bundle */,
+				0023558223A8BE130066017E /* fxaa.bundle */,
+				0023558323A8BE140066017E /* anim_model.bundle */,
+				0023558423A8BE140066017E /* face_beautification.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0023558523A8BE140066017E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0023558623A8BE140066017E /* funama.h */,
+				0023558723A8BE140066017E /* FURenderer.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		0023559123A8C3B00066017E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002355A223A8CB990066017E /* libz.tbd */,
+				002355A023A8C7CF0066017E /* libbz2.1.0.tbd */,
+				0023559E23A8C7C50066017E /* libiconv.2.4.0.tbd */,
+				0023559C23A8C6E00066017E /* libJXPlayer.a */,
+				0023559A23A8C5F40066017E /* libc++.tbd */,
+				0023559823A8C3C40066017E /* AVFoundation.framework */,
+				0023559623A8C3BE0066017E /* CoreMedia.framework */,
+				0023559423A8C3B90066017E /* Accelerate.framework */,
+				0023559223A8C3B00066017E /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0025215923A9CDA700232109 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				0025216123A9CDEF00232109 /* libJXPlayer.a */,
+				0025215A23A9CDC100232109 /* Headers */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		0025215A23A9CDC100232109 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0025215B23A9CDC100232109 /* JXAudioSession.h */,
+				0025215C23A9CDC100232109 /* JXRecoderMainDefine.h */,
+				0025215D23A9CDC100232109 /* JXMediaRecorderController.h */,
+				0025215E23A9CDC100232109 /* JXRecorderEnum.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0023531D23A8B3910066017E /* JXBeautyTestDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0023533723A8B3920066017E /* Build configuration list for PBXNativeTarget "JXBeautyTestDemo" */;
+			buildPhases = (
+				0023531A23A8B3910066017E /* Sources */,
+				0023531B23A8B3910066017E /* Frameworks */,
+				0023531C23A8B3910066017E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JXBeautyTestDemo;
+			productName = JXBeautyTestDemo;
+			productReference = 0023531E23A8B3910066017E /* JXBeautyTestDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0023531623A8B3910066017E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = KUWO;
+				TargetAttributes = {
+					0023531D23A8B3910066017E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 0023531923A8B3910066017E /* Build configuration list for PBXProject "JXBeautyTestDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0023531523A8B3910066017E;
+			productRefGroup = 0023531F23A8B3910066017E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0023531D23A8B3910066017E /* JXBeautyTestDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0023531C23A8B3910066017E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0023533123A8B3920066017E /* LaunchScreen.storyboard in Resources */,
+				0023558A23A8BE140066017E /* release_note.txt in Resources */,
+				0023558C23A8BE140066017E /* v3.bundle in Resources */,
+				0023558E23A8BE140066017E /* fxaa.bundle in Resources */,
+				0023558923A8BE140066017E /* dataSource.plist in Resources */,
+				0023555B23A8B8F90066017E /* dataSource.plist in Resources */,
+				0023558D23A8BE140066017E /* ardata_ex.bundle in Resources */,
+				0023532E23A8B3920066017E /* Assets.xcassets in Resources */,
+				0023558F23A8BE140066017E /* anim_model.bundle in Resources */,
+				0023559023A8BE140066017E /* face_beautification.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0023531A23A8B3910066017E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0023532923A8B3910066017E /* ViewController.m in Sources */,
+				0023556523A8B94E0066017E /* QTDevicePermissionManager.m in Sources */,
+				0023532323A8B3910066017E /* AppDelegate.m in Sources */,
+				0023557323A8BA100066017E /* QTMobileAnchorLiveBeautyView.m in Sources */,
+				0023555E23A8B8F90066017E /* FULiveModel.m in Sources */,
+				0023533423A8B3920066017E /* main.m in Sources */,
+				0023555C23A8B8F90066017E /* FUMusicPlayer.m in Sources */,
+				0023557923A8BA810066017E /* UIView+Sizes.m in Sources */,
+				0023557523A8BA110066017E /* QTMobileAnchorLiveFilterCollectionViewCell.m in Sources */,
+				0023556223A8B9270066017E /* QTBeautySettingViewController.m in Sources */,
+				0023554423A8B5170066017E /* JXHomeViewController.m in Sources */,
+				0023557423A8BA110066017E /* QTMobileAnchorLiveEffectView.m in Sources */,
+				0023557223A8BA100066017E /* QTMobileAnchorLiveFilterView.m in Sources */,
+				0023555923A8B8F90066017E /* JXStickerManage.m in Sources */,
+				0023555F23A8B8F90066017E /* FUManager.m in Sources */,
+				0023555D23A8B8F90066017E /* FUImageHelper.m in Sources */,
+				0023555A23A8B8F90066017E /* STStickerLoader.m in Sources */,
+				0023554823A8B8780066017E /* QTMobileLiveManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0023532F23A8B3920066017E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0023533023A8B3920066017E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0023533523A8B3920066017E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0023533623A8B3920066017E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0023533823A8B3920066017E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G33MN8M2BW;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/JXBeautyTestDemo/Header/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/JXBeautyTestDemo/Manager/BeautyFilter/faceunity/**";
+				INFOPLIST_FILE = JXBeautyTestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JXBeautyTestDemo/Manager/BeautyFilter/faceunity/FaceUnity-SDK-iOS-lite",
+					"$(PROJECT_DIR)/JXBeautyTestDemo/Recorder",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lstdc++",
+					"-fobjc-arc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jx.JXBeautyTestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		0023533923A8B3920066017E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G33MN8M2BW;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/JXBeautyTestDemo/Header/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/JXBeautyTestDemo/Manager/BeautyFilter/faceunity/**";
+				INFOPLIST_FILE = JXBeautyTestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JXBeautyTestDemo/Manager/BeautyFilter/faceunity/FaceUnity-SDK-iOS-lite",
+					"$(PROJECT_DIR)/JXBeautyTestDemo/Recorder",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lstdc++",
+					"-fobjc-arc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jx.JXBeautyTestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0023531923A8B3910066017E /* Build configuration list for PBXProject "JXBeautyTestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0023533523A8B3920066017E /* Debug */,
+				0023533623A8B3920066017E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0023533723A8B3920066017E /* Build configuration list for PBXNativeTarget "JXBeautyTestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0023533823A8B3920066017E /* Debug */,
+				0023533923A8B3920066017E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0023531623A8B3910066017E /* Project object */;
+}
