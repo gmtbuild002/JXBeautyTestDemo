@@ -279,6 +279,11 @@
     if(recorderController != self.recorderController){
         return;
     }
+    //
+    if(liveError)
+    {
+        NSLog(@"liveError:%@",liveError.description);
+    }
     
 }
 #pragma mark - JXMediaRecorderControllerCaptureDelegate

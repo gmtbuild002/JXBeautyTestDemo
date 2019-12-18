@@ -51,10 +51,12 @@
         //
         QTBeautySettingViewController *beautySettingVC = [[QTBeautySettingViewController alloc]init];
         beautySettingVC.modalPresentationStyle = UIModalPresentationFullScreen;
+        //
         if(inputtextField)
         {
-                //
-            beautySettingVC.pushStreamUrl = inputtextField.text; //@"rtmp://kuwopush.fastcdn.com/voicelive/432399220?opstr=publish&tm=1576721830&uid=432399220&roomid=432399220&Md5=3598c70a5a28a9577f5d7f01e65ce2e0";//@"rtmp://192.168.1.104:1935/rtmplive/room";//inputtextField.text;
+            //
+            beautySettingVC.pushStreamUrl = inputtextField.text;
+            
         }
         [weakSelf presentViewController:beautySettingVC animated:YES completion:^{
             
@@ -82,11 +84,22 @@
     {
         _startLiveButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 200, 200.f)];
         _startLiveButton.center = CGPointMake(JXScreenWidth/2, JXScreenHeight/2);
-        _startLiveButton.backgroundColor = [UIColor redColor];
+//        _startLiveButton.backgroundColor = [UIColor redColor];
         [_startLiveButton setTitle:@"开始直播" forState:UIControlStateNormal];
         [_startLiveButton addTarget:self action:@selector(startButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_startLiveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self.view addSubview:_startLiveButton];
         
+        CAGradientLayer *gl = [CAGradientLayer layer];
+        gl.frame = _startLiveButton.bounds;
+        gl.startPoint = CGPointMake(1, 0);
+        gl.endPoint = CGPointMake(0, 0);
+        gl.colors = @[(__bridge id)[UIColor colorWithRed:203/255.0 green:252/255.0 blue:238/255.0 alpha:1.0].CGColor, (__bridge id)[UIColor colorWithRed:103/255.0 green:230/255.0 blue:230/255.0 alpha:1.0].CGColor];
+        gl.locations = @[@(0), @(1.0f)];
+        [_startLiveButton.layer insertSublayer:gl below:_startLiveButton.titleLabel.layer];
+
+        
+
         
     }
     return _startLiveButton;
